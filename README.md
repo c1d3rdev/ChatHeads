@@ -8,7 +8,7 @@ The project is split up into two repositories. The primary interface which is lo
 
 These were build using [iOSOpenDev](https://github.com/kokoabim/iOSOpenDev) Xcode toolset, in addition to [theos](https://github.com/theos/theos)
 
-I no longer actively maintain these tweaks, however, I will do my best to answer questions and provide direction to anyone interested in contributing, or just generally curious the software.
+I no longer actively maintain these tweaks, however, I will do my best to answer questions and provide direction to anyone interested in contributing, or just generally curious about the software.
 
 
 ## Donate
