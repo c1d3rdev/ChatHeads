@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31703AB74E5CC88E7BC10E7F /* libPods-MessageHeadsXI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B36FBE86AB84AF2E0F4C5B5E /* libPods-MessageHeadsXI.a */; };
+		7E5ADAB8B0B9F905923A2B3F /* libPods-MessageHeadsXIPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABE4210928BDCFC84387C4 /* libPods-MessageHeadsXIPreferences.a */; };
+		C70959F721165E4C002711EE /* AppSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C785BC9721164FE9002CE767 /* AppSupport.framework */; };
+		C70959F9211686BF002711EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70959F8211686BF002711EE /* UIKit.framework */; };
+		C72445E7225E5F24001E1330 /* ExtensionsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C72445E5225E5F24001E1330 /* ExtensionsTableViewController.h */; };
+		C72445E8225E5F24001E1330 /* ExtensionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72445E6225E5F24001E1330 /* ExtensionsTableViewController.m */; };
+		C72445EA225EB2D0001E1330 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72445E9225EB2D0001E1330 /* CoreGraphics.framework */; };
+		C72445EC225EB2D5001E1330 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72445EB225EB2D5001E1330 /* CoreFoundation.framework */; };
+		C72445EE225EB39A001E1330 /* GraphicsServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72445ED225EB39A001E1330 /* GraphicsServices.framework */; };
+		C72445F4225FBF3E001E1330 /* BMInitialsPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C72445F2225FBF3E001E1330 /* BMInitialsPlaceholderView.m */; };
+		C72445F6225FBF3E001E1330 /* BMInitialsPlaceholderView.h in Headers */ = {isa = PBXBuildFile; fileRef = C72445F3225FBF3E001E1330 /* BMInitialsPlaceholderView.h */; };
+		C72445F9225FC62E001E1330 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72445F8225FC62E001E1330 /* AudioToolbox.framework */; };
+		C72445FA225FC647001E1330 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72445F8225FC62E001E1330 /* AudioToolbox.framework */; };
+		C74EB0E32414806D007ECF08 /* ChatHeadHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = C74EB0E12414806D007ECF08 /* ChatHeadHelpers.h */; };
+		C74EB0E42414806D007ECF08 /* ChatHeadHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C74EB0E22414806D007ECF08 /* ChatHeadHelpers.m */; };
+		C74EB0E7241481C4007ECF08 /* ContextHostManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = C74EB0E6241481C4007ECF08 /* ContextHostManager.mm */; };
+		C76D7C9C2236D4B200FD82AF /* MHWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C76D7C9A2236D4B200FD82AF /* MHWindowManager.h */; };
+		C76D7C9D2236D4B200FD82AF /* MHWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C76D7C9B2236D4B200FD82AF /* MHWindowManager.m */; };
+		C793182222B96AAF00F3E17C /* ChatHeadsMessagingServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C793182022B96AAF00F3E17C /* ChatHeadsMessagingServer.m */; };
+		C793182322B96AAF00F3E17C /* ChatHeadsMessagingServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C793182122B96AAF00F3E17C /* ChatHeadsMessagingServer.h */; };
+		C798E5082236CF8D00203391 /* interfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A68902211513C800B65EC5 /* interfaces.h */; };
+		C798E5092236CF8D00203391 /* interfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A68902211513C800B65EC5 /* interfaces.h */; };
+		C79B80F222A6DCA8000B36EA /* libEnclave.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C79B80F022A6DC9E000B36EA /* libEnclave.a */; };
+		C7A688DF2115067C00B65EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A688DE2115067C00B65EC5 /* Foundation.framework */; };
+		C7A688EA2115067C00B65EC5 /* MessageHeadsXI.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A688E92115067C00B65EC5 /* MessageHeadsXI.mm */; };
+		C7A688F5211506E400B65EC5 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A688F4211506E400B65EC5 /* libsubstrate.dylib */; };
+		C7A688F82115075400B65EC5 /* MHWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A688F62115075400B65EC5 /* MHWindow.h */; };
+		C7A688F92115075400B65EC5 /* MHWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A688F72115075400B65EC5 /* MHWindow.m */; };
+		C7A689002115093F00B65EC5 /* MHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A688FE2115093F00B65EC5 /* MHViewController.h */; };
+		C7A689012115093F00B65EC5 /* MHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A688FF2115093F00B65EC5 /* MHViewController.m */; };
+		C7AA9AE92242EBCD007C8FFC /* libapplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AA9AE82242EBCD007C8FFC /* libapplist.dylib */; };
+		C7AA9AEA22433981007C8FFC /* librocketbootstrap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C70959F521165D57002711EE /* librocketbootstrap.dylib */; };
+		C7AA9AEC22433B9C007C8FFC /* AppSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C785BC9721164FE9002CE767 /* AppSupport.framework */; };
+		C7C972EC212222210027F82F /* librocketbootstrap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C70959F521165D57002711EE /* librocketbootstrap.dylib */; };
+		C7DC80532422790B001EFE5F /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DC80522422790B001EFE5F /* libMobileGestalt.tbd */; };
+		C7DC805424227911001EFE5F /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DC80522422790B001EFE5F /* libMobileGestalt.tbd */; };
+		C7E1006E2118BA5200AFFB8D /* MHChatHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E1006C2118BA5200AFFB8D /* MHChatHeadView.h */; };
+		C7E1006F2118BA5200AFFB8D /* MHChatHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E1006D2118BA5200AFFB8D /* MHChatHeadView.m */; };
+		C7E1007D2118BEB200AFFB8D /* FCPopOverView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E100712118BEB100AFFB8D /* FCPopOverView.h */; };
+		C7E1007E2118BEB200AFFB8D /* FCChatHead.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E100722118BEB100AFFB8D /* FCChatHead.h */; };
+		C7E1007F2118BEB200AFFB8D /* FCChatHeadsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E100732118BEB100AFFB8D /* FCChatHeadsDelegate.h */; };
+		C7E100802118BEB200AFFB8D /* FCChatHeadsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E100742118BEB100AFFB8D /* FCChatHeadsController.m */; };
+		C7E100812118BEB200AFFB8D /* FCCHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E100752118BEB100AFFB8D /* FCCHConstants.m */; };
+		C7E100822118BEB200AFFB8D /* FCChatHead.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E100762118BEB100AFFB8D /* FCChatHead.m */; };
+		C7E100832118BEB200AFFB8D /* FCPopOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E100772118BEB100AFFB8D /* FCPopOverView.m */; };
+		C7E100842118BEB200AFFB8D /* FCChatHeadsController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E100782118BEB100AFFB8D /* FCChatHeadsController.h */; };
+		C7E100852118BEB200AFFB8D /* FCCHConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E100792118BEB100AFFB8D /* FCCHConstants.h */; };
+		C7E100862118BEB200AFFB8D /* FCSinkView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E1007A2118BEB100AFFB8D /* FCSinkView.h */; };
+		C7E100872118BEB200AFFB8D /* FCSinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E1007B2118BEB200AFFB8D /* FCSinkView.m */; };
+		C7E100882118BEB200AFFB8D /* FCChatHeads.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E1007C2118BEB200AFFB8D /* FCChatHeads.h */; };
+		C7E90B9C2127954700C8C270 /* WSMosaicImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E90B9A2127954600C8C270 /* WSMosaicImageView.m */; };
+		C7E90B9D2127954700C8C270 /* WSMosaicImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E90B9B2127954600C8C270 /* WSMosaicImageView.h */; };
+		C7E90BA421288B5100C8C270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A688DE2115067C00B65EC5 /* Foundation.framework */; };
+		C7E90BA521288B5100C8C270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70959F8211686BF002711EE /* UIKit.framework */; };
+		C7E90BB121288B5100C8C270 /* MessageHeadsXIPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E90BB021288B5100C8C270 /* MessageHeadsXIPreferencesController.h */; };
+		C7E90BB321288B5100C8C270 /* MessageHeadsXIPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E90BB221288B5100C8C270 /* MessageHeadsXIPreferencesController.m */; };
+		C7E90BCE2128939800C8C270 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E90BCD2128939800C8C270 /* Preferences.framework */; };
+		C7EDFA772116C8D400957A3A /* ContextInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EDFA762116C8D400957A3A /* ContextInterfaces.h */; };
+		C7EDFA7D2116DC9B00957A3A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EDFA7C2116DC9B00957A3A /* Contacts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C776C775226E5C050056FBC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7A688D12115067C00B65EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7E90BA221288B5100C8C270;
+			remoteInfo = MessageHeadsXIPreferences;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3472ABE0CF640A91ADACCF92 /* Pods-MessageHeadsXI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageHeadsXI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessageHeadsXI/Pods-MessageHeadsXI.debug.xcconfig"; sourceTree = "<group>"; };
+		B36FBE86AB84AF2E0F4C5B5E /* libPods-MessageHeadsXI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageHeadsXI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CD1E590992E48E2F08BFDD /* Pods-MessageHeadsXI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageHeadsXI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessageHeadsXI/Pods-MessageHeadsXI.release.xcconfig"; sourceTree = "<group>"; };
+		C70959F3211657A5002711EE /* libobjcipc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjcipc.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libobjcipc.dylib; sourceTree = "<group>"; };
+		C70959F521165D57002711EE /* librocketbootstrap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librocketbootstrap.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/librocketbootstrap.dylib; sourceTree = "<group>"; };
+		C70959F8211686BF002711EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C72445E5225E5F24001E1330 /* ExtensionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionsTableViewController.h; sourceTree = "<group>"; };
+		C72445E6225E5F24001E1330 /* ExtensionsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionsTableViewController.m; sourceTree = "<group>"; };
+		C72445E9225EB2D0001E1330 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C72445EB225EB2D5001E1330 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C72445ED225EB39A001E1330 /* GraphicsServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsServices.framework; path = ../../../../../../../opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks/GraphicsServices.framework; sourceTree = "<group>"; };
+		C72445F2225FBF3E001E1330 /* BMInitialsPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInitialsPlaceholderView.m; sourceTree = "<group>"; };
+		C72445F3225FBF3E001E1330 /* BMInitialsPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInitialsPlaceholderView.h; sourceTree = "<group>"; };
+		C72445F8225FC62E001E1330 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C74EB0E12414806D007ECF08 /* ChatHeadHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatHeadHelpers.h; sourceTree = "<group>"; };
+		C74EB0E22414806D007ECF08 /* ChatHeadHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatHeadHelpers.m; sourceTree = "<group>"; };
+		C74EB0E5241481C4007ECF08 /* ContextHostManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContextHostManager.h; sourceTree = "<group>"; };
+		C74EB0E6241481C4007ECF08 /* ContextHostManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ContextHostManager.mm; sourceTree = "<group>"; };
+		C76D7C9A2236D4B200FD82AF /* MHWindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHWindowManager.h; sourceTree = "<group>"; };
+		C76D7C9B2236D4B200FD82AF /* MHWindowManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = MHWindowManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C785BC9721164FE9002CE767 /* AppSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppSupport.framework; path = ../../../../../../../opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks/AppSupport.framework; sourceTree = "<group>"; };
+		C793182022B96AAF00F3E17C /* ChatHeadsMessagingServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatHeadsMessagingServer.m; sourceTree = "<group>"; };
+		C793182122B96AAF00F3E17C /* ChatHeadsMessagingServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatHeadsMessagingServer.h; sourceTree = "<group>"; };
+		C79B80F022A6DC9E000B36EA /* libEnclave.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEnclave.a; path = ../../../../../../../opt/iOSOpenDev/lib/libEnclave.a; sourceTree = "<group>"; };
+		C79E14712227D1660093B146 /* IPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPC.h; sourceTree = "<group>"; };
+		C7A688DB2115067C00B65EC5 /* MessageHeadsXI.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MessageHeadsXI.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A688DE2115067C00B65EC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7A688E32115067C00B65EC5 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C7A688E42115067C00B65EC5 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C7A688E62115067C00B65EC5 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C7A688E72115067C00B65EC5 /* MessageHeadsXI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageHeadsXI-Prefix.pch"; sourceTree = "<group>"; };
+		C7A688E82115067C00B65EC5 /* MessageHeadsXI.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = MessageHeadsXI.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C7A688E92115067C00B65EC5 /* MessageHeadsXI.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MessageHeadsXI.mm; sourceTree = "<group>"; };
+		C7A688EE2115067C00B65EC5 /* MessageHeadsXI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MessageHeadsXI.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MessageHeadsXI.plist; sourceTree = "<group>"; };
+		C7A688F4211506E400B65EC5 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		C7A688F62115075400B65EC5 /* MHWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHWindow.h; sourceTree = "<group>"; };
+		C7A688F72115075400B65EC5 /* MHWindow.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = MHWindow.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		C7A688FE2115093F00B65EC5 /* MHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHViewController.h; sourceTree = "<group>"; };
+		C7A688FF2115093F00B65EC5 /* MHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHViewController.m; sourceTree = "<group>"; };
+		C7A68902211513C800B65EC5 /* interfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interfaces.h; sourceTree = "<group>"; };
+		C7AA9AE82242EBCD007C8FFC /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libapplist.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libapplist.dylib; sourceTree = "<group>"; };
+		C7DC80522422790B001EFE5F /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
+		C7E1006C2118BA5200AFFB8D /* MHChatHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHChatHeadView.h; sourceTree = "<group>"; };
+		C7E1006D2118BA5200AFFB8D /* MHChatHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHChatHeadView.m; sourceTree = "<group>"; };
+		C7E100712118BEB100AFFB8D /* FCPopOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPopOverView.h; sourceTree = "<group>"; };
+		C7E100722118BEB100AFFB8D /* FCChatHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCChatHead.h; sourceTree = "<group>"; };
+		C7E100732118BEB100AFFB8D /* FCChatHeadsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCChatHeadsDelegate.h; sourceTree = "<group>"; };
+		C7E100742118BEB100AFFB8D /* FCChatHeadsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCChatHeadsController.m; sourceTree = "<group>"; };
+		C7E100752118BEB100AFFB8D /* FCCHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCHConstants.m; sourceTree = "<group>"; };
+		C7E100762118BEB100AFFB8D /* FCChatHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCChatHead.m; sourceTree = "<group>"; };
+		C7E100772118BEB100AFFB8D /* FCPopOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPopOverView.m; sourceTree = "<group>"; };
+		C7E100782118BEB100AFFB8D /* FCChatHeadsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCChatHeadsController.h; sourceTree = "<group>"; };
+		C7E100792118BEB100AFFB8D /* FCCHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCHConstants.h; sourceTree = "<group>"; };
+		C7E1007A2118BEB100AFFB8D /* FCSinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSinkView.h; sourceTree = "<group>"; };
+		C7E1007B2118BEB200AFFB8D /* FCSinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCSinkView.m; sourceTree = "<group>"; };
+		C7E1007C2118BEB200AFFB8D /* FCChatHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCChatHeads.h; sourceTree = "<group>"; };
+		C7E90B9A2127954600C8C270 /* WSMosaicImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMosaicImageView.m; sourceTree = "<group>"; };
+		C7E90B9B2127954600C8C270 /* WSMosaicImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMosaicImageView.h; sourceTree = "<group>"; };
+		C7E90BA321288B5100C8C270 /* MessageHeadsXIPreferences.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageHeadsXIPreferences.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E90BA621288B5100C8C270 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		C7E90BAB21288B5100C8C270 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C7E90BAC21288B5100C8C270 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C7E90BAE21288B5100C8C270 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C7E90BAF21288B5100C8C270 /* MessageHeadsXIPreferences-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MessageHeadsXIPreferences-Info.plist"; sourceTree = "<group>"; };
+		C7E90BB021288B5100C8C270 /* MessageHeadsXIPreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHeadsXIPreferencesController.h; sourceTree = "<group>"; };
+		C7E90BB221288B5100C8C270 /* MessageHeadsXIPreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageHeadsXIPreferencesController.m; sourceTree = "<group>"; };
+		C7E90BB721288B5100C8C270 /* MessageHeadsXIPreferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MessageHeadsXIPreferences.plist; path = Package/Library/PreferenceLoader/Preferences/MessageHeadsXIPreferences.plist; sourceTree = "<group>"; };
+		C7E90BBA21288B5100C8C270 /* MessageHeadsXIPreferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MessageHeadsXIPreferences.plist; path = Package/Library/PreferenceBundles/MessageHeadsXIPreferences.bundle/MessageHeadsXIPreferences.plist; sourceTree = "<group>"; };
+		C7E90BBB21288B5100C8C270 /* MessageHeadsXIPreferencesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MessageHeadsXIPreferencesIcon.png; path = Package/Library/PreferenceBundles/MessageHeadsXIPreferences.bundle/MessageHeadsXIPreferencesIcon.png; sourceTree = "<group>"; };
+		C7E90BBC21288B5100C8C270 /* MessageHeadsXIPreferencesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MessageHeadsXIPreferencesIcon@2x.png"; path = "Package/Library/PreferenceBundles/MessageHeadsXIPreferences.bundle/MessageHeadsXIPreferencesIcon@2x.png"; sourceTree = "<group>"; };
+		C7E90BC221288B5100C8C270 /* MessageHeadsXIPreferences-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageHeadsXIPreferences-Prefix.pch"; sourceTree = "<group>"; };
+		C7E90BCD2128939800C8C270 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = ../../../../../../../opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks/Preferences.framework; sourceTree = "<group>"; };
+		C7EDFA762116C8D400957A3A /* ContextInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextInterfaces.h; sourceTree = "<group>"; };
+		C7EDFA7C2116DC9B00957A3A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		D2ABE4210928BDCFC84387C4 /* libPods-MessageHeadsXIPreferences.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageHeadsXIPreferences.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8943F3DC26EE6405917EA8 /* Pods-MessageHeadsXIPreferences.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageHeadsXIPreferences.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessageHeadsXIPreferences/Pods-MessageHeadsXIPreferences.release.xcconfig"; sourceTree = "<group>"; };
+		F51C08DC554E6306CD83C48A /* Pods-MessageHeadsXIPreferences.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageHeadsXIPreferences.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessageHeadsXIPreferences/Pods-MessageHeadsXIPreferences.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7A688D72115067C00B65EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DC805424227911001EFE5F /* libMobileGestalt.tbd in Frameworks */,
+				C72445FA225FC647001E1330 /* AudioToolbox.framework in Frameworks */,
+				C7A688F5211506E400B65EC5 /* libsubstrate.dylib in Frameworks */,
+				C7C972EC212222210027F82F /* librocketbootstrap.dylib in Frameworks */,
+				C7EDFA7D2116DC9B00957A3A /* Contacts.framework in Frameworks */,
+				C70959F9211686BF002711EE /* UIKit.framework in Frameworks */,
+				C70959F721165E4C002711EE /* AppSupport.framework in Frameworks */,
+				C7A688DF2115067C00B65EC5 /* Foundation.framework in Frameworks */,
+				31703AB74E5CC88E7BC10E7F /* libPods-MessageHeadsXI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E90B9F21288B5100C8C270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DC80532422790B001EFE5F /* libMobileGestalt.tbd in Frameworks */,
+				C79B80F222A6DCA8000B36EA /* libEnclave.a in Frameworks */,
+				C72445F9225FC62E001E1330 /* AudioToolbox.framework in Frameworks */,
+				C72445EE225EB39A001E1330 /* GraphicsServices.framework in Frameworks */,
+				C72445EC225EB2D5001E1330 /* CoreFoundation.framework in Frameworks */,
+				C72445EA225EB2D0001E1330 /* CoreGraphics.framework in Frameworks */,
+				C7AA9AEC22433B9C007C8FFC /* AppSupport.framework in Frameworks */,
+				C7AA9AEA22433981007C8FFC /* librocketbootstrap.dylib in Frameworks */,
+				C7AA9AE92242EBCD007C8FFC /* libapplist.dylib in Frameworks */,
+				C7E90BCE2128939800C8C270 /* Preferences.framework in Frameworks */,
+				C7E90BA421288B5100C8C270 /* Foundation.framework in Frameworks */,
+				C7E90BA521288B5100C8C270 /* UIKit.framework in Frameworks */,
+				7E5ADAB8B0B9F905923A2B3F /* libPods-MessageHeadsXIPreferences.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7A688D02115067C00B65EC5 = {
+			isa = PBXGroup;
+			children = (
+				C7A688E02115067C00B65EC5 /* MessageHeadsXI */,
+				C7E90BA821288B5100C8C270 /* MessageHeadsXIPreferences */,
+				C7A688DD2115067C00B65EC5 /* Frameworks */,
+				C7A688DC2115067C00B65EC5 /* Products */,
+				F7FAB7F4C354E321B21A62EB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C7A688DC2115067C00B65EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688DB2115067C00B65EC5 /* MessageHeadsXI.dylib */,
+				C7E90BA321288B5100C8C270 /* MessageHeadsXIPreferences.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7A688DD2115067C00B65EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7DC80522422790B001EFE5F /* libMobileGestalt.tbd */,
+				C79B80F022A6DC9E000B36EA /* libEnclave.a */,
+				C72445F8225FC62E001E1330 /* AudioToolbox.framework */,
+				C72445ED225EB39A001E1330 /* GraphicsServices.framework */,
+				C72445EB225EB2D5001E1330 /* CoreFoundation.framework */,
+				C72445E9225EB2D0001E1330 /* CoreGraphics.framework */,
+				C7AA9AE82242EBCD007C8FFC /* libapplist.dylib */,
+				C7E90BCD2128939800C8C270 /* Preferences.framework */,
+				C7EDFA7C2116DC9B00957A3A /* Contacts.framework */,
+				C70959F8211686BF002711EE /* UIKit.framework */,
+				C70959F521165D57002711EE /* librocketbootstrap.dylib */,
+				C70959F3211657A5002711EE /* libobjcipc.dylib */,
+				C785BC9721164FE9002CE767 /* AppSupport.framework */,
+				C7A688F4211506E400B65EC5 /* libsubstrate.dylib */,
+				C7A688DE2115067C00B65EC5 /* Foundation.framework */,
+				B36FBE86AB84AF2E0F4C5B5E /* libPods-MessageHeadsXI.a */,
+				C7E90BA621288B5100C8C270 /* Preferences.framework */,
+				D2ABE4210928BDCFC84387C4 /* libPods-MessageHeadsXIPreferences.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7A688E02115067C00B65EC5 /* MessageHeadsXI */ = {
+			isa = PBXGroup;
+			children = (
+				C79E14712227D1660093B146 /* IPC.h */,
+				C7A68902211513C800B65EC5 /* interfaces.h */,
+				C76D7C9A2236D4B200FD82AF /* MHWindowManager.h */,
+				C76D7C9B2236D4B200FD82AF /* MHWindowManager.m */,
+				C7A688E82115067C00B65EC5 /* MessageHeadsXI.xm */,
+				C793182122B96AAF00F3E17C /* ChatHeadsMessagingServer.h */,
+				C793182022B96AAF00F3E17C /* ChatHeadsMessagingServer.m */,
+				C7E100892118BF1400AFFB8D /* Window */,
+				C7E1008A2118BF2600AFFB8D /* MHViewController */,
+				C7E1008B2118BF3A00AFFB8D /* ChatHeadView */,
+				C7E1008C2118BF4100AFFB8D /* Context Hosting */,
+				C7E100702118BEA300AFFB8D /* FCChatHeadsController */,
+				C7A688E92115067C00B65EC5 /* MessageHeadsXI.mm */,
+				C7A688E12115067C00B65EC5 /* Package */,
+				C7A688E52115067C00B65EC5 /* Supporting Files */,
+				C74EB0E12414806D007ECF08 /* ChatHeadHelpers.h */,
+				C74EB0E22414806D007ECF08 /* ChatHeadHelpers.m */,
+			);
+			path = MessageHeadsXI;
+			sourceTree = "<group>";
+		};
+		C7A688E12115067C00B65EC5 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688E22115067C00B65EC5 /* DEBIAN */,
+				C7A688EB2115067C00B65EC5 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C7A688E22115067C00B65EC5 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688E32115067C00B65EC5 /* control.txt */,
+				C7A688E42115067C00B65EC5 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C7A688E52115067C00B65EC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688E62115067C00B65EC5 /* PackageVersion.plist */,
+				C7A688E72115067C00B65EC5 /* MessageHeadsXI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7A688EB2115067C00B65EC5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688EC2115067C00B65EC5 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C7A688EC2115067C00B65EC5 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688ED2115067C00B65EC5 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C7A688ED2115067C00B65EC5 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688EE2115067C00B65EC5 /* MessageHeadsXI.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		C7E100702118BEA300AFFB8D /* FCChatHeadsController */ = {
+			isa = PBXGroup;
+			children = (
+				C7E100722118BEB100AFFB8D /* FCChatHead.h */,
+				C7E100762118BEB100AFFB8D /* FCChatHead.m */,
+				C7E1007C2118BEB200AFFB8D /* FCChatHeads.h */,
+				C7E100782118BEB100AFFB8D /* FCChatHeadsController.h */,
+				C7E100742118BEB100AFFB8D /* FCChatHeadsController.m */,
+				C7E100732118BEB100AFFB8D /* FCChatHeadsDelegate.h */,
+				C7E100792118BEB100AFFB8D /* FCCHConstants.h */,
+				C7E100752118BEB100AFFB8D /* FCCHConstants.m */,
+				C7E100712118BEB100AFFB8D /* FCPopOverView.h */,
+				C7E100772118BEB100AFFB8D /* FCPopOverView.m */,
+				C7E1007A2118BEB100AFFB8D /* FCSinkView.h */,
+				C7E1007B2118BEB200AFFB8D /* FCSinkView.m */,
+			);
+			name = FCChatHeadsController;
+			sourceTree = "<group>";
+		};
+		C7E100892118BF1400AFFB8D /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688F62115075400B65EC5 /* MHWindow.h */,
+				C7A688F72115075400B65EC5 /* MHWindow.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
+		C7E1008A2118BF2600AFFB8D /* MHViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7A688FE2115093F00B65EC5 /* MHViewController.h */,
+				C7A688FF2115093F00B65EC5 /* MHViewController.m */,
+			);
+			name = MHViewController;
+			sourceTree = "<group>";
+		};
+		C7E1008B2118BF3A00AFFB8D /* ChatHeadView */ = {
+			isa = PBXGroup;
+			children = (
+				C7E1006C2118BA5200AFFB8D /* MHChatHeadView.h */,
+				C7E1006D2118BA5200AFFB8D /* MHChatHeadView.m */,
+				C7E90B9B2127954600C8C270 /* WSMosaicImageView.h */,
+				C7E90B9A2127954600C8C270 /* WSMosaicImageView.m */,
+				C72445F3225FBF3E001E1330 /* BMInitialsPlaceholderView.h */,
+				C72445F2225FBF3E001E1330 /* BMInitialsPlaceholderView.m */,
+			);
+			name = ChatHeadView;
+			sourceTree = "<group>";
+		};
+		C7E1008C2118BF4100AFFB8D /* Context Hosting */ = {
+			isa = PBXGroup;
+			children = (
+				C74EB0E5241481C4007ECF08 /* ContextHostManager.h */,
+				C74EB0E6241481C4007ECF08 /* ContextHostManager.mm */,
+				C7EDFA762116C8D400957A3A /* ContextInterfaces.h */,
+			);
+			name = "Context Hosting";
+			sourceTree = "<group>";
+		};
+		C7E90BA821288B5100C8C270 /* MessageHeadsXIPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BB021288B5100C8C270 /* MessageHeadsXIPreferencesController.h */,
+				C7E90BB221288B5100C8C270 /* MessageHeadsXIPreferencesController.m */,
+				C72445E5225E5F24001E1330 /* ExtensionsTableViewController.h */,
+				C72445E6225E5F24001E1330 /* ExtensionsTableViewController.m */,
+				C7E90BA921288B5100C8C270 /* Package */,
+				C7E90BAD21288B5100C8C270 /* Supporting Files */,
+			);
+			path = MessageHeadsXIPreferences;
+			sourceTree = "<group>";
+		};
+		C7E90BA921288B5100C8C270 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BAA21288B5100C8C270 /* DEBIAN */,
+				C7E90BB421288B5100C8C270 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C7E90BAA21288B5100C8C270 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BAB21288B5100C8C270 /* control.txt */,
+				C7E90BAC21288B5100C8C270 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C7E90BAD21288B5100C8C270 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BAE21288B5100C8C270 /* PackageVersion.plist */,
+				C7E90BAF21288B5100C8C270 /* MessageHeadsXIPreferences-Info.plist */,
+				C7E90BC221288B5100C8C270 /* MessageHeadsXIPreferences-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7E90BB421288B5100C8C270 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BB521288B5100C8C270 /* PreferenceLoader */,
+				C7E90BB821288B5100C8C270 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C7E90BB521288B5100C8C270 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BB621288B5100C8C270 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		C7E90BB621288B5100C8C270 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BB721288B5100C8C270 /* MessageHeadsXIPreferences.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		C7E90BB821288B5100C8C270 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BB921288B5100C8C270 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		C7E90BB921288B5100C8C270 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				C7E90BBA21288B5100C8C270 /* MessageHeadsXIPreferences.plist */,
+				C7E90BBB21288B5100C8C270 /* MessageHeadsXIPreferencesIcon.png */,
+				C7E90BBC21288B5100C8C270 /* MessageHeadsXIPreferencesIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		F7FAB7F4C354E321B21A62EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3472ABE0CF640A91ADACCF92 /* Pods-MessageHeadsXI.debug.xcconfig */,
+				C5CD1E590992E48E2F08BFDD /* Pods-MessageHeadsXI.release.xcconfig */,
+				F51C08DC554E6306CD83C48A /* Pods-MessageHeadsXIPreferences.debug.xcconfig */,
+				EA8943F3DC26EE6405917EA8 /* Pods-MessageHeadsXIPreferences.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C7A688D82115067C00B65EC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E100842118BEB200AFFB8D /* FCChatHeadsController.h in Headers */,
+				C7E1006E2118BA5200AFFB8D /* MHChatHeadView.h in Headers */,
+				C7A689002115093F00B65EC5 /* MHViewController.h in Headers */,
+				C7E100852118BEB200AFFB8D /* FCCHConstants.h in Headers */,
+				C7EDFA772116C8D400957A3A /* ContextInterfaces.h in Headers */,
+				C7E100862118BEB200AFFB8D /* FCSinkView.h in Headers */,
+				C76D7C9C2236D4B200FD82AF /* MHWindowManager.h in Headers */,
+				C74EB0E32414806D007ECF08 /* ChatHeadHelpers.h in Headers */,
+				C7E1007F2118BEB200AFFB8D /* FCChatHeadsDelegate.h in Headers */,
+				C793182322B96AAF00F3E17C /* ChatHeadsMessagingServer.h in Headers */,
+				C798E5092236CF8D00203391 /* interfaces.h in Headers */,
+				C7E90B9D2127954700C8C270 /* WSMosaicImageView.h in Headers */,
+				C72445F6225FBF3E001E1330 /* BMInitialsPlaceholderView.h in Headers */,
+				C7E1007D2118BEB200AFFB8D /* FCPopOverView.h in Headers */,
+				C7E100882118BEB200AFFB8D /* FCChatHeads.h in Headers */,
+				C7E1007E2118BEB200AFFB8D /* FCChatHead.h in Headers */,
+				C7A688F82115075400B65EC5 /* MHWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E90BA021288B5100C8C270 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72445E7225E5F24001E1330 /* ExtensionsTableViewController.h in Headers */,
+				C7E90BB121288B5100C8C270 /* MessageHeadsXIPreferencesController.h in Headers */,
+				C798E5082236CF8D00203391 /* interfaces.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C7A688DA2115067C00B65EC5 /* MessageHeadsXI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A688F12115067C00B65EC5 /* Build configuration list for PBXNativeTarget "MessageHeadsXI" */;
+			buildPhases = (
+				3B6A363143C3F29B5A30B9D9 /* [CP] Check Pods Manifest.lock */,
+				C7A688D52115067C00B65EC5 /* ShellScript */,
+				C7A688D62115067C00B65EC5 /* Sources */,
+				C7A688D72115067C00B65EC5 /* Frameworks */,
+				C7A688D82115067C00B65EC5 /* Headers */,
+				C7A688D92115067C00B65EC5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C776C776226E5C050056FBC8 /* PBXTargetDependency */,
+			);
+			name = MessageHeadsXI;
+			productName = MessageHeadsXI;
+			productReference = C7A688DB2115067C00B65EC5 /* MessageHeadsXI.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C7E90BA221288B5100C8C270 /* MessageHeadsXIPreferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E90BC521288B5100C8C270 /* Build configuration list for PBXNativeTarget "MessageHeadsXIPreferences" */;
+			buildPhases = (
+				8CAAE724D2B6B63DC9F88089 /* [CP] Check Pods Manifest.lock */,
+				C7E90B9E21288B5100C8C270 /* Sources */,
+				C7E90B9F21288B5100C8C270 /* Frameworks */,
+				C7E90BA021288B5100C8C270 /* Headers */,
+				C7E90BA121288B5100C8C270 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageHeadsXIPreferences;
+			productName = MessageHeadsXIPreferences;
+			productReference = C7E90BA321288B5100C8C270 /* MessageHeadsXIPreferences.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7A688D12115067C00B65EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					C7A688DA2115067C00B65EC5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					C7E90BA221288B5100C8C270 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = C7A688D42115067C00B65EC5 /* Build configuration list for PBXProject "MessageHeadsXI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7A688D02115067C00B65EC5;
+			productRefGroup = C7A688DC2115067C00B65EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7A688DA2115067C00B65EC5 /* MessageHeadsXI */,
+				C7E90BA221288B5100C8C270 /* MessageHeadsXIPreferences */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B6A363143C3F29B5A30B9D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessageHeadsXI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CAAE724D2B6B63DC9F88089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessageHeadsXIPreferences-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A688D52115067C00B65EC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos\n";
+		};
+		C7A688D92115067C00B65EC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n";
+		};
+		C7E90BA121288B5100C8C270 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7A688D62115067C00B65EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E100802118BEB200AFFB8D /* FCChatHeadsController.m in Sources */,
+				C7E1006F2118BA5200AFFB8D /* MHChatHeadView.m in Sources */,
+				C74EB0E42414806D007ECF08 /* ChatHeadHelpers.m in Sources */,
+				C7E100822118BEB200AFFB8D /* FCChatHead.m in Sources */,
+				C7A688EA2115067C00B65EC5 /* MessageHeadsXI.mm in Sources */,
+				C76D7C9D2236D4B200FD82AF /* MHWindowManager.m in Sources */,
+				C7A689012115093F00B65EC5 /* MHViewController.m in Sources */,
+				C72445F4225FBF3E001E1330 /* BMInitialsPlaceholderView.m in Sources */,
+				C7E90B9C2127954700C8C270 /* WSMosaicImageView.m in Sources */,
+				C7E100872118BEB200AFFB8D /* FCSinkView.m in Sources */,
+				C7E100812118BEB200AFFB8D /* FCCHConstants.m in Sources */,
+				C7E100832118BEB200AFFB8D /* FCPopOverView.m in Sources */,
+				C74EB0E7241481C4007ECF08 /* ContextHostManager.mm in Sources */,
+				C7A688F92115075400B65EC5 /* MHWindow.m in Sources */,
+				C793182222B96AAF00F3E17C /* ChatHeadsMessagingServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E90B9E21288B5100C8C270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E90BB321288B5100C8C270 /* MessageHeadsXIPreferencesController.m in Sources */,
+				C72445E8225E5F24001E1330 /* ExtensionsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C776C776226E5C050056FBC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7E90BA221288B5100C8C270 /* MessageHeadsXIPreferences */;
+			targetProxy = C776C775226E5C050056FBC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C7A688EF2115067C00B65EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C7A688F02115067C00B65EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C7A688F22115067C00B65EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3472ABE0CF640A91ADACCF92 /* Pods-MessageHeadsXI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y6DPBQA62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)/MessageHeadsXI",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageHeadsXI/MessageHeadsXI-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MessageHeadsXI/PackageVersion.plist";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 arm64e";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = x.local;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Debug;
+		};
+		C7A688F32115067C00B65EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CD1E590992E48E2F08BFDD /* Pods-MessageHeadsXI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y6DPBQA62;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)/MessageHeadsXI",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageHeadsXI/MessageHeadsXI-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MessageHeadsXI/PackageVersion.plist";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 arm64e";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = x.local;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Release;
+		};
+		C7E90BC321288B5100C8C270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51C08DC554E6306CD83C48A /* Pods-MessageHeadsXIPreferences.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y6DPBQA62;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)/MessageHeadsXI",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageHeadsXIPreferences/MessageHeadsXIPreferences-Prefix.pch";
+				INFOPLIST_FILE = "MessageHeadsXIPreferences/MessageHeadsXIPreferences-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 arm64e";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C7E90BC421288B5100C8C270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8943F3DC26EE6405917EA8 /* Pods-MessageHeadsXIPreferences.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y6DPBQA62;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/sdks/iPhoneOS9.3.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)/MessageHeadsXI",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageHeadsXIPreferences/MessageHeadsXIPreferences-Prefix.pch";
+				INFOPLIST_FILE = "MessageHeadsXIPreferences/MessageHeadsXIPreferences-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 arm64e";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7A688D42115067C00B65EC5 /* Build configuration list for PBXProject "MessageHeadsXI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A688EF2115067C00B65EC5 /* Debug */,
+				C7A688F02115067C00B65EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7A688F12115067C00B65EC5 /* Build configuration list for PBXNativeTarget "MessageHeadsXI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A688F22115067C00B65EC5 /* Debug */,
+				C7A688F32115067C00B65EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E90BC521288B5100C8C270 /* Build configuration list for PBXNativeTarget "MessageHeadsXIPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E90BC321288B5100C8C270 /* Debug */,
+				C7E90BC421288B5100C8C270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7A688D12115067C00B65EC5 /* Project object */;
+}

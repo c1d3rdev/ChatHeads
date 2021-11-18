@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MessageHeadsXI' target in the 'MessageHeadsXI' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

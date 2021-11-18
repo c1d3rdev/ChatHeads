@@ -1,0 +1,10 @@
+Package: com.c1d3r.chatheadsclient
+Name: ChatHeadsClient
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: c1d3r
+Author: c1d3r
+Section: Tweaks
+Version: 0.0.1-38+debug
+Installed-Size: 240

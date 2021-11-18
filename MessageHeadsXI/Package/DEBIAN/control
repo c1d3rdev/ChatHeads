@@ -1,0 +1,18 @@
+Package: com.c1d3r.MessageHeadsXI
+Name: ChatHeads
+Version: 3.0~b2
+Description: Floating Facebook style chatheads for your favorite apps!
+Section: Tweaks
+Depends: firmware (>= 5.0), mobilesubstrate, com.rpetrich.rocketbootstrap (>= 1.0.7~beta2), applist
+Conflicts: 
+Replaces:
+Priority: optional
+Architecture: iphoneos-arm
+Author: c1d3r
+dev: c1d3r
+Homepage: 
+Depiction: https://c1d3r.com/repo/depictions/?p=com.c1d3r.MessageHeadsXI
+Maintainer: c1d3r <c1d3rdev@gmail.com>
+Icon:
+
+

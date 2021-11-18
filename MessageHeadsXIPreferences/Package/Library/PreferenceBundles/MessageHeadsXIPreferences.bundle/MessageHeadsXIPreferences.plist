@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>ChatHeads</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Installed Extensions</string>
+			<key>footerText</key>
+			<string>Enabled apps will not be abled to be killed in the app switcher.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>enabled</key>
+			<true/>
+			<key>label</key>
+			<string>Browse Extensions</string>
+			<key>action</key>
+			<string>viewExtensions:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>App Options</string>
+			<key>footerText</key>
+			<string>Requires Respring</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>key</key>
+			<string>resizeWindows</string>
+			<key>label</key>
+			<string>Resize Windows to Fit (beta)</string>
+			<key>defaults</key>
+			<string>com.c1d3r.ChatHeadsSettings</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>ChatHead Options</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>key</key>
+			<string>showPreview</string>
+			<key>label</key>
+			<string>Show Message Preview</string>
+			<key>defaults</key>
+			<string>com.c1d3r.ChatHeadsSettings</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>key</key>
+			<string>preventNotifications</string>
+			<key>label</key>
+			<string>Prevent Banners</string>
+			<key>defaults</key>
+			<string>com.c1d3r.ChatHeadsSettings</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>key</key>
+			<string>spawnHeadWhileInApp</string>
+			<key>label</key>
+			<string>Present Heads While In App</string>
+			<key>defaults</key>
+			<string>com.c1d3r.ChatHeadsSettings</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Developer Tools</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>key</key>
+			<string>debug</string>
+			<key>label</key>
+			<string>Debug Alerts</string>
+			<key>defaults</key>
+			<string>com.c1d3r.ChatHeadsSettings</string>
+			<key>set</key>
+			<string>setValue:forSpecifier:</string>
+			<key>get</key>
+			<string>getValueForSpecifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Extra Stuff</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>followOnTwitter:</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Follow @c1d3rDev (Developer)</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>followAhmedOnTwitter:</string>
+			<key>icon</key>
+			<string>ahmed.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Follow @lazynagy (Icon Designer)</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>support:</string>
+			<key>icon</key>
+			<string>bug.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Support / Feature Request</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>makeDonation:</string>
+			<key>icon</key>
+			<string>paypal.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Donate</string>
+		</dict>
+	</array>
+</dict>
+</plist>

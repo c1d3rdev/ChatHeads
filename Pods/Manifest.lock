@@ -1,0 +1,46 @@
+PODS:
+  - AGWindowView (0.1.9)
+  - BCGenieEffect (1.1)
+  - CMPopTipView (2.3.2)
+  - GLGroupChatPicView (0.0.1)
+  - L360Confetti (1.1.4)
+  - pop (1.0.12)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - UIImageView-AGCInitials (0.0.2)
+
+DEPENDENCIES:
+  - AGWindowView
+  - BCGenieEffect
+  - CMPopTipView
+  - GLGroupChatPicView
+  - L360Confetti
+  - pop
+  - SDWebImage
+  - UIImageView-AGCInitials
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AGWindowView
+    - BCGenieEffect
+    - CMPopTipView
+    - GLGroupChatPicView
+    - L360Confetti
+    - pop
+    - SDWebImage
+    - UIImageView-AGCInitials
+
+SPEC CHECKSUMS:
+  AGWindowView: 08dc8d448b8c96430e78b3945a9c2cf5b0fde754
+  BCGenieEffect: 3efb235716f121caa6b26040bfd0ae11e1bae4b4
+  CMPopTipView: 2d56ef53e8e739c4e63ad97a5a88b97712b46c7b
+  GLGroupChatPicView: 0f066583cf62d6cd1fb2d428fde0d15e8dab57ea
+  L360Confetti: 9b77ea9925e758de4b6e7d1edbb7b87f3eaa0d17
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  UIImageView-AGCInitials: 4326faf01587dbfa2ffdee7e596ae96c1beca05c
+
+PODFILE CHECKSUM: fd9a7fcc0d0a05397de8ce4d65d93414434bc6e2
+
+COCOAPODS: 1.5.3

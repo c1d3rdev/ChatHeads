@@ -1,0 +1,6 @@
+module Pods_MessageHeadsXI {
+  umbrella header "Pods-MessageHeadsXI-umbrella.h"
+
+  export *
+  module * { export * }
+}
